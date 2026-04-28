@@ -139,11 +139,10 @@ const AboutPage: React.FC = () => {
       <PageHeader>
         <div className="container">
           <PageTitle>
-            About <GradientText>ModernBlog</GradientText>
+            关于 <GradientText>ModernBlog</GradientText>
           </PageTitle>
           <PageSubtitle>
-            We're passionate about sharing knowledge and building a community 
-            of learners, creators, and innovators.
+            我们热衷于分享知识，并致力于构建一个由学习者、创作者和创新者组成的活跃社区。
           </PageSubtitle>
         </div>
       </PageHeader>
@@ -151,84 +150,73 @@ const AboutPage: React.FC = () => {
       <Section>
         <div className="container">
           <ContentSection>
-            <h2>Our Story</h2>
+            <h2>我们的故事</h2>
             <p>
-              ModernBlog was born from a simple idea: to create a platform where ideas could flourish 
-              and knowledge could be shared freely. We believe that the best insights come from 
-              diverse perspectives and collaborative thinking.
+              ModernBlog 诞生于一个简单的理念：创建一个让创意蓬勃发展、知识自由分享的平台。我们相信，最深刻的见解往往源于多元的视角和协作式思考。
             </p>
             <p>
-              Our team consists of passionate writers, developers, designers, and thinkers who are 
-              committed to creating high-quality content that inspires, educates, and empowers our 
-              readers to push the boundaries of what's possible.
+              我们的团队由充满热情的作者、开发人员、设计师和思想家组成。我们致力于创作高质量内容，旨在启发、教育并赋能每一位读者，共同突破可能性的边界。
             </p>
             
-            <h2>Our Mission</h2>
+            <h2>我们的使命</h2>
             <p>
-              We strive to democratize knowledge sharing by providing a platform that's accessible, 
-              beautiful, and performant. Every article we publish is carefully crafted to provide 
-              real value to our readers, whether they're beginners looking to learn or experts 
-              seeking to stay ahead of the curve.
+              我们努力通过提供一个无障碍、精美且高性能的平台，推动知识共享的民主化。我们发布的每一篇文章都经过精心打磨，无论是渴望学习的初学者，还是寻求保持行业领先地位的专家，都能从中获得真正的价值。
             </p>
           </ContentSection>
 
           <StatsGrid>
             <StatCard>
               <div className="number">50K+</div>
-              <div className="label">Monthly Readers</div>
+              <div className="label">月度活跃读者</div>
             </StatCard>
             <StatCard>
               <div className="number">200+</div>
-              <div className="label">Articles Published</div>
+              <div className="label">已发布文章</div>
             </StatCard>
             <StatCard>
               <div className="number">15+</div>
-              <div className="label">Expert Writers</div>
+              <div className="label">专家作者</div>
             </StatCard>
           </StatsGrid>
 
           <ContentSection>
-            <h2>Meet Our Team</h2>
+            <h2>认识我们的团队</h2>
           </ContentSection>
 
           <TeamGrid>
             <TeamCard>
               <div className="avatar">JS</div>
-              <h3>Jane Smith</h3>
-              <div className="role">Editor-in-Chief</div>
+              <h3>简 · 史密斯</h3>
+              <div className="role">总编辑</div>
               <p>
-                Jane brings over 10 years of editorial experience and a passion for 
-                technology journalism to ModernBlog.
+                Jane 拥有超过 10 年的编辑经验，她带着对科技新闻的极高热情加入了 ModernBlog 团队。
               </p>
             </TeamCard>
             <TeamCard>
               <div className="avatar">MD</div>
-              <h3>Mike Davis</h3>
-              <div className="role">Lead Developer</div>
+              <h3>迈克 · 戴维斯</h3>
+              <div className="role">首席开发工程师</div>
               <p>
-                Mike is a full-stack developer who loves building fast, accessible 
-                web experiences and sharing his knowledge.
+                Mike 是一位全栈开发专家，热衷于构建快速、易用的 Web 体验，并乐于分享技术心得。
               </p>
             </TeamCard>
             <TeamCard>
               <div className="avatar">SL</div>
-              <h3>Sarah Lee</h3>
-              <div className="role">UX Designer</div>
+              <h3>莎拉 · 李</h3>
+              <div className="role">用户体验设计师</div>
               <p>
-                Sarah focuses on creating intuitive, beautiful interfaces that 
-                make complex topics accessible to everyone.
+                Sarah 专注于打造直观、精美的交互界面，让复杂的课题变得通俗易懂。
               </p>
             </TeamCard>
           </TeamGrid>
 
           <CTASection>
-            <h2>Join Our Community</h2>
+            <h2>加入我们的社区</h2>
             <p>
-              Ready to be part of our growing community? Subscribe to our newsletter 
-              and never miss an update from ModernBlog.
+              准备好成为我们不断壮大的社区的一员了吗？订阅我们的时事通讯，获取 ModernBlog 的最新动态。
             </p>
             <Button variant="primary">
-              Subscribe Now
+              立即订阅
             </Button>
           </CTASection>
         </div>
