@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
         </FooterGrid>
         
         <FooterBottom>
-          <p>&copy; 2024 ModernBlog. All rights reserved. Built with ❤️ using Gatsby and TypeScript.</p>
+          <p>&copy; ICP备案号 苏ICP备2026003452号.</p>
         </FooterBottom>
       </FooterContent>
     </FooterContainer>
