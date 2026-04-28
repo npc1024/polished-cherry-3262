@@ -126,18 +126,17 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
       <Hero>
         <div className="container">
           <HeroTitle>
-            Welcome to <GradientText>ModernBlog</GradientText>
+            欢迎来到 <GradientText>ModernBlog</GradientText>
           </HeroTitle>
           <HeroSubtitle>
-            Discover insightful articles, cutting-edge tutorials, and thought-provoking content 
-            from industry experts and passionate writers.
+            探索由行业专家和热血作者带来的深度文章、前沿教程以及启发性内容。
           </HeroSubtitle>
           <HeroCTA>
             <Button variant="primary" as={Link} to="/blog">
-              Explore Articles
+              探索文章
             </Button>
             <Button variant="secondary" as={Link} to="/about">
-              Learn More
+              了解更多
             </Button>
           </HeroCTA>
         </div>
@@ -146,23 +145,23 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
       <Section>
         <div className="container">
           <SectionTitle>
-            Why Choose <GradientText>ModernBlog</GradientText>?
+            为什么选择 <GradientText>ModernBlog</GradientText>？
           </SectionTitle>
           <Grid>
             <FeatureCard>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🚀</div>
-              <h3>Lightning Fast</h3>
-              <p>Built with Gatsby for blazing-fast performance and optimal user experience.</p>
+              <h3>极速体验</h3>
+              <p>基于 Gatsby 构建，拥有风驰电掣般的性能和极致的用户体验。</p>
             </FeatureCard>
             <FeatureCard>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>💡</div>
-              <h3>Modern Design</h3>
-              <p>Clean, responsive design that looks beautiful on all devices and screen sizes.</p>
+              <h3>现代设计</h3>
+              <p>纯净的响应式设计，在任何设备和屏幕尺寸上都能完美呈现。</p>
             </FeatureCard>
             <FeatureCard>
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎯</div>
-              <h3>SEO Optimized</h3>
-              <p>Built-in SEO optimization to help your content reach the right audience.</p>
+              <h3>SEO 优化</h3>
+              <p>内置 SEO 优化机制，助您的内容精准触达目标受众。</p>
             </FeatureCard>
           </Grid>
         </div>
@@ -172,7 +171,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
         <Section>
           <div className="container">
             <SectionTitle>
-              Latest <GradientText>Articles</GradientText>
+              最新 <GradientText>文章</GradientText>
             </SectionTitle>
             <Grid>
               {posts.slice(0, 3).map(post => (
@@ -187,14 +186,14 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
                   </div>
                   <p>{post.frontmatter.description || post.excerpt}</p>
                   <Link to={`/blog${post.fields.slug}`} className="read-more">
-                    Read more →
+                    阅读全文 →
                   </Link>
                 </BlogPreview>
               ))}
             </Grid>
             <div style={{ textAlign: 'center', marginTop: '3rem' }}>
               <Button variant="secondary" as={Link} to="/blog">
-                View All Articles
+                查看全部文章
               </Button>
             </div>
           </div>
@@ -223,7 +222,7 @@ export const query = graphql`
         excerpt
         frontmatter {
           title
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "YYYY年MM月DD日")
           description
         }
         fields {
