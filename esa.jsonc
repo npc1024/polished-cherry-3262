@@ -1,0 +1,8 @@
+{
+  "name": "gatsby-template",
+  "installCommand": "npm install",
+  "assets": {
+    "directory": "./public",
+    "notFoundStrategy": "404Page"
+  }
+}

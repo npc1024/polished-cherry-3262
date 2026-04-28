@@ -1,0 +1,57 @@
+# Gatsby Build Output
+public/
+.cache/
+
+# GraphQL and TypeScript generated files
+src/gatsby-types.d.ts
+.gatsby-context.js
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.development.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package manager files
+.npm
+.yarn-integrity
+.pnp.*
+yarn.lock
+package-lock.json
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+tmp/
+temp/
