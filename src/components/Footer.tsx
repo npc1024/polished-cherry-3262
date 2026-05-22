@@ -127,8 +127,6 @@ const Footer: React.FC = () => {
             <ul>
               <li><a href="/blog">Latest Posts</a></li>
               <li><a href="/blog/categories">Categories</a></li>
-              <li><a href="/blog/tags">Tags</a></li>
-              <li><a href="/rss.xml">RSS Feed</a></li>
             </ul>
           </FooterSection>
           
@@ -137,8 +135,6 @@ const Footer: React.FC = () => {
             <ul>
               <li><a href="/about">About Us</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/careers">Careers</a></li>
-              <li><a href="/press">Press</a></li>
             </ul>
           </FooterSection>
           
@@ -147,7 +143,6 @@ const Footer: React.FC = () => {
             <ul>
               <li><a href="/privacy">Privacy Policy</a></li>
               <li><a href="/terms">Terms of Service</a></li>
-              <li><a href="/cookies">Cookie Policy</a></li>
             </ul>
           </FooterSection>
         </FooterGrid>
