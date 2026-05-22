@@ -101,8 +101,7 @@ const Footer: React.FC = () => {
           <FooterSection>
             <h3><GradientText>ModernBlog</GradientText></h3>
             <p>
-              A beautiful, modern blog platform built with cutting-edge technologies. 
-              Share your thoughts and connect with readers around the world.
+              现代化博客
             </p>
             <SocialLinks>
               <a href="#" aria-label="Twitter">
@@ -154,7 +153,7 @@ const Footer: React.FC = () => {
         </FooterGrid>
         
         <FooterBottom>
-          <p>&copy; ICP备案号 苏ICP备2026003452号.</p>
+          <p>&copy; ICP备案号 苏ICP备2026003452号-2.</p>
         </FooterBottom>
       </FooterContent>
     </FooterContainer>
