@@ -1,73 +1,38 @@
 ---
-title: "Welcome to ModernBlog"
-date: "2024-01-15"
-description: "Discover what makes ModernBlog special and how we're revolutionizing the way we share knowledge and ideas."
+title: "openwrt锁定频段"
+date: "2026-05-22"
+description: "openwrt锁定频段"
 tags: ["welcome", "introduction", "blog"]
 ---
+锁定频段执行两条命令即可：
+锁频：mmcli -m 0 --set-current-bands='频段名称'
+例如锁b3：mmcli -m 0 --set-current-bands='eutran3'
+重连：nmcli connection up modem
+如果想开机锁频段编辑
+/etc/rc.local文件
+在exit 0上方加入要锁频的命令
+modem命令
+使用方法mmcli -m 0 -参数
+如：mmcli -m 0 --set-current-bands='eutran3'
+调制解调器命令选项:
+-w，--monitor-state监视给定调制解调器的状态
+-e，--enable启用给定的调制解调器
+-d，--disable禁用给定的调制解调器
+--set-power-state-on在调制解调器中设置全功率状态
+--set-power-state-low在调制解调器中设置低功率状态
+--set-power-state-off关闭调制解调器电源
+-r，--reset重置给定的调制解调器
+--factory-reset=/[CODE/]将给定的调制解调器重置为出厂状态
+--command=/[COMMAND/]向调制解调器发送AT命令
+--create-bearer=/["key=value，..."/]在给定的调制解调器中创建新的分组数据承载
+--delete-bearer=/[PATH|INDEX/]从给定的调制解调器中删除数据承载
+--set-current-capabilities =/[capability 1 | capability 2.../]设置当前的调制解调器功能。
+--set-allowed-modes =/[mode 1 | mode 2.../]设置给定调制解调器中允许的模式。
+--set-preferred-mode=/[MODE/]在给定的调制解调器中设置首选模式/(必须使用- set-allowed-modes/)给出允许的模式
+--set-current-bands =/[band 1 | band 2.../]设置给定调制解调器要使用的频带。
+--set-primary-sim-SLOT =/[SLOT NUMBER/]切换到所选的SIM卡插槽
+--inhibit
+-抑制调制解调器
 
-# Welcome to the Future of Blogging
-
-We're thrilled to welcome you to **ModernBlog** – a platform designed from the ground up to deliver exceptional reading and writing experiences. Built with cutting-edge technologies and a focus on performance, accessibility, and beautiful design.
-
-## What Makes Us Different
-
-### Lightning-Fast Performance
-Our blog is built with [Gatsby](https://www.gatsbyjs.com/), a modern static site generator that pre-builds pages for incredible speed. Every page loads instantly, giving you and your readers the best possible experience.
-
-### Modern Design Philosophy
-We believe that great content deserves great presentation. Our design is inspired by the best in the industry, with:
-
-- **Clean, minimal aesthetics** that focus on your content
-- **Responsive design** that looks beautiful on every device
-- **Accessibility-first** approach ensuring everyone can enjoy your content
-- **Dark mode** optimized for comfortable reading
-
-### Developer-Friendly
-Built with TypeScript and modern React patterns, ModernBlog is not just beautiful – it's also maintainable and extensible.
-
-```typescript
-// Example: Clean, typed React components
-interface BlogPostProps {
-  title: string;
-  content: string;
-  publishedAt: Date;
-}
-
-const BlogPost: React.FC<BlogPostProps> = ({ title, content, publishedAt }) => {
-  return (
-    <article>
-      <h1>{title}</h1>
-      <time>{publishedAt.toLocaleDateString()}</time>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </article>
-  );
-};
-```
-
-## Getting Started
-
-Ready to start your blogging journey? Here's what you can do:
-
-1. **Explore** our existing content to get a feel for the platform
-2. **Subscribe** to stay updated with our latest posts
-3. **Share** articles you find valuable with your network
-4. **Connect** with us on social media for behind-the-scenes content
-
-## What's Coming Next
-
-We have exciting plans for ModernBlog:
-
-- **Enhanced search** functionality to help you find exactly what you're looking for
-- **Community features** to foster discussions and connections
-- **Author profiles** to showcase the brilliant minds behind our content
-- **Newsletter integration** for curated weekly digests
-
-> "The best way to predict the future is to create it." – Peter Drucker
-
-We're not just creating another blog platform – we're building the future of how we consume and share knowledge online.
-
-## Join Our Community
-
-Whether you're here to read, learn, or contribute, we're excited to have you as part of our community. Follow us on social media, subscribe to our newsletter, and don't hesitate to reach out with feedback or ideas.
 
 Welcome aboard, and happy reading! 🚀
